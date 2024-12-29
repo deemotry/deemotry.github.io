@@ -148,7 +148,24 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Trajectory representation learning on a network enhances our understanding of vehicular traffic patterns and benefits numerous
+downstream applications. Existing approaches using classic machine learning or deep learning embed trajectories as dense vectors,
+which lack interpretability and are inefficient to store and analyze in
+downstream tasks. In this paper, an explainable trajectory representation learning framework through dictionary learning is proposed.
+Given a collection of trajectories on a network, it extracts a compact
+dictionary of commonly used subpaths called “pathlets”, which optimally reconstruct each trajectory by simple concatenations. The
+resulting representation is naturally sparse and encodes strong
+spatial semantics. Theoretical analysis of our proposed algorithm
+is conducted to provide a probabilistic bound on the estimation
+error of the optimal dictionary. A hierarchical dictionary learning
+scheme is also proposed to ensure the algorithm’s scalability on
+large networks, leading to a multi-scale trajectory representation.
+Our framework is evaluated on two large-scale real-world taxi
+datasets. Compared to previous work, the dictionary learned by
+our method is more compact and has better reconstruction rate for
+new trajectories. We also demonstrate the promising performance
+of this method in downstream tasks including trip time prediction
+task and data compression.
           </p>
         </div>
       </div>
